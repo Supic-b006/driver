@@ -125,32 +125,30 @@
 </div>
 </div>
 </div>
-<div class="absolute bottom-0 w-full bg-surface-light dark:bg-surface-dark border-t border-gray-200 dark:border-gray-700 px-6 py-4 flex justify-between items-end pb-8">
-<a href="home.html">
-  <button class="flex flex-col items-center gap-1 group">
-    <span class="material-icons-round text-2xl text-subtext-light dark:text-subtext-dark group-hover:text-primary transition-colors">home</span>
-    <span class="text-[10px] font-medium text-subtext-light dark:text-subtext-dark group-hover:text-primary">Home</span>
-  </button>
-</a>
-  
-<button class="flex flex-col items-center gap-1">
-<span class="material-icons-round text-2xl text-primary">receipt_long</span>
-<span class="text-[10px] font-medium text-primary">History</span>
-</button>
-  
-<button class="flex flex-col items-center gap-1 group">
-<div class="relative">
-<span class="material-icons-round text-2xl text-subtext-light dark:text-subtext-dark group-hover:text-primary transition-colors">mail</span>
-<span class="absolute -top-0.5 -right-0.5 w-2.5 h-2.5 bg-red-500 rounded-full border-2 border-surface-light dark:border-surface-dark"></span>
-</div>
-<span class="text-[10px] font-medium text-subtext-light dark:text-subtext-dark group-hover:text-primary">Notify</span>
-</button>
-  
-<button class="flex flex-col items-center gap-1 group">
-<span class="material-icons-round text-2xl text-subtext-light dark:text-subtext-dark group-hover:text-primary transition-colors">account_circle</span>
-<span class="text-[10px] font-medium text-subtext-light dark:text-subtext-dark group-hover:text-primary">Account</span>
-</button>
-</div>
+  <nav class="absolute bottom-0 left-0 right-0 h-20 bg-surface-light dark:bg-surface-dark border-t border-gray-200 dark:border-gray-700 flex justify-around items-center">
+
+    <a href="home.html" class="flex flex-col items-center gap-1 text-gray-400 hover:text-primary">
+      <span class="material-icons-round text-2xl">home</span>
+      <span class="text-[10px] font-medium">Home</span>
+    </a>
+
+    <a href="history.html" class="flex flex-col items-center gap-1 text-gray-400 hover:text-primary">
+      <span class="material-icons-round text-2xl">receipt_long</span>
+      <span class="text-[10px] font-medium">History</span>
+    </a>
+
+    <a href="notification.html" class="relative flex flex-col items-center gap-1 text-gray-400 hover:text-primary">
+      <span class="material-icons-round text-2xl">mail</span>
+      <span class="absolute top-1 right-3 w-2.5 h-2.5 bg-red-500 rounded-full"></span>
+      <span class="text-[10px] font-medium">Notify</span>
+    </a>
+
+    <a href="account.html" class="flex flex-col items-center gap-1 text-primary">
+      <span class="material-icons-round text-2xl">account_circle</span>
+      <span class="text-[10px] font-medium">Account</span>
+    </a>
+
+  </nav>
 </div>
 <button class="fixed bottom-6 right-6 bg-primary text-white p-3 rounded-full shadow-lg hover:bg-orange-600 transition-colors z-50" onclick="document.documentElement.classList.toggle('dark')">
 <span class="material-icons-round">dark_mode</span>
