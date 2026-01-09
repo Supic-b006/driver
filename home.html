@@ -72,13 +72,16 @@
 <button class="text-primary text-sm font-medium hover:opacity-80">See all</button>
 </div>
 <div class="grid grid-cols-2 gap-4">
-<button class="group flex flex-col items-center justify-center p-6 bg-surface-light dark:bg-surface-dark rounded-2xl shadow-sm hover:shadow-lg transition-all duration-300 border border-transparent hover:border-primary/30 active:scale-95">
-<div class="w-14 h-14 bg-orange-100 dark:bg-gray-700 rounded-full flex items-center justify-center mb-4 group-hover:bg-primary group-hover:text-white transition-colors duration-300">
-<span class="material-symbols-rounded text-primary text-3xl group-hover:text-white transition-colors">recycling</span>
-</div>
-<span class="font-semibold text-lg text-center">รับซื้อของเก่า</span>
-<span class="text-xs text-text-sub-light dark:text-text-sub-dark mt-1">Buy Recyclables</span>
-</button>
+<a href="avaliableItem.html" >
+      <button class="group flex flex-col items-center justify-center p-6 bg-surface-light dark:bg-surface-dark rounded-2xl shadow-sm hover:shadow-lg transition-all duration-300 border border-transparent hover:border-primary/30 active:scale-95">
+            <div class="w-14 h-14 bg-orange-100 dark:bg-gray-700 rounded-full flex items-center justify-center mb-4 group-hover:bg-primary group-hover:text-white transition-colors duration-300">
+            <span class="material-symbols-rounded text-primary text-3xl group-hover:text-white transition-colors">recycling</span>
+            </div>
+            <span class="font-semibold text-lg text-center">รับซื้อของเก่า</span>
+            <span class="text-xs text-text-sub-light dark:text-text-sub-dark mt-1">Buy Recyclables</span>
+      </button>
+</a>
+      
 <button class="group flex flex-col items-center justify-center p-6 bg-surface-light dark:bg-surface-dark rounded-2xl shadow-sm hover:shadow-lg transition-all duration-300 border border-transparent hover:border-primary/30 active:scale-95">
 <div class="w-14 h-14 bg-orange-100 dark:bg-gray-700 rounded-full flex items-center justify-center mb-4 group-hover:bg-primary group-hover:text-white transition-colors duration-300">
 <span class="material-symbols-rounded text-primary text-3xl group-hover:text-white transition-colors">delete_sweep</span>
@@ -157,9 +160,13 @@
 </nav>
 
 </div>
-<button aria-label="Toggle Dark Mode" class="fixed bottom-24 right-6 p-3 bg-primary text-white rounded-full shadow-lg z-50 hover:bg-orange-600 transition-colors" onclick="document.documentElement.classList.toggle('dark')">
-<span class="material-symbols-rounded block dark:hidden">dark_mode</span>
-<span class="material-symbols-rounded hidden dark:block">light_mode</span>
+
+<!-- Dark mode toggle -->
+<button
+  class="fixed bottom-28 right-6 bg-primary text-white p-3 rounded-full shadow-lg hover:bg-orange-600 transition z-50"
+  onclick="document.documentElement.classList.toggle('dark')">
+  <span class="material-icons-round block dark:hidden">dark_mode</span>
+  <span class="material-icons-round hidden dark:block">light_mode</span>
 </button>
 
 </body></html>
